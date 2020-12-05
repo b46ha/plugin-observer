@@ -85,7 +85,7 @@ jobs:
 
     - name: Initialize git
       if: needs.init.outputs.publish == 'true'
-      uses: home-assistant/actions/helpers/git-init@master
+      uses: b46ha/actions/helpers/git-init@master
       with:
         name: ${{ secrets.GIT_NAME }}
         email: ${{ secrets.GIT_EMAIL }}
